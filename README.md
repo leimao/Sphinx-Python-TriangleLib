@@ -22,3 +22,7 @@ To install the `trianglelib`, which we would not probably do, please run the fol
 ```
 $ pip install .
 ```
+
+## Build Documentations
+
+Please check the [`README`](docs/README.md) in [`docs`](docs/) for details.
