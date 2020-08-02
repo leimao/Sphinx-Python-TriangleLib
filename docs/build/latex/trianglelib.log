@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  1 AUG 2020 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  1 AUG 2020 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -686,21 +686,25 @@ File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 
 ]
 Chapter 3.
-[5]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-97.
+[5] [6
+
+]
+Chapter 4.
+[7]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+53.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [6] [7] [8]
-Chapter 4.
-[9
+) [8] [9] [10]
+Chapter 5.
+[11
 
-] [10
+] [12
 
-] [11
+] [13
 
 
-] (./trianglelib.ind [12
+] (./trianglelib.ind [14
 
 
 ]
@@ -721,23 +725,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 hape.Triangle
  []
 
-[13
+[15
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 623.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 623.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 679.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 679.
  (./trianglelib.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 623.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 623.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 679.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 679.
 Package rerunfilecheck Info: File `trianglelib.out' has not changed.
-(rerunfilecheck)             Checksum: 6D03078B5BC14CADA1BD2F7D4D3F90BC;1864.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 623.
+(rerunfilecheck)             Checksum: 70AF045BB6A5AC19F48D99A4D5CAF90F;2343.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 679.
  ) 
 Here is how much of TeX's memory you used:
- 13522 strings out of 481239
- 191059 string characters out of 5920378
- 473335 words of memory out of 5000000
- 28406 multiletter control sequences out of 15000+600000
+ 13538 strings out of 481239
+ 191297 string characters out of 5920378
+ 480575 words of memory out of 5000000
+ 28416 multiletter control sequences out of 15000+600000
  579298 words of font info for 84 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  38i,14n,49p,372b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -752,10 +756,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on trianglelib.pdf (17 pages, 142229 bytes).
+Output written on trianglelib.pdf (19 pages, 144827 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

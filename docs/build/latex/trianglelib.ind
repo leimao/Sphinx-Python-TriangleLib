@@ -5,64 +5,64 @@
 \let\spxextra \sphinxstyleindexextra
 
   \bigletter {\sphinxsymbolsname}
-  \item \spxentry{\_\_init\_\_()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{5}
+  \item \spxentry{\_\_init\_\_()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{7}
 
   \indexspace
   \bigletter A
-  \item \spxentry{a}\spxextra{trianglelib.shape.Triangle attribute}, \hyperpage{5}
-  \item \spxentry{area()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{6}
+  \item \spxentry{a}\spxextra{trianglelib.shape.Triangle attribute}, \hyperpage{7}
+  \item \spxentry{area()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{8}
 
   \indexspace
   \bigletter B
-  \item \spxentry{b}\spxextra{trianglelib.shape.Triangle attribute}, \hyperpage{5}
+  \item \spxentry{b}\spxextra{trianglelib.shape.Triangle attribute}, \hyperpage{7}
 
   \indexspace
   \bigletter C
-  \item \spxentry{c}\spxextra{trianglelib.shape.Triangle attribute}, \hyperpage{5}
-  \item \spxentry{compute\_area()}\spxextra{in module trianglelib.utils}, \hyperpage{7}
-  \item \spxentry{compute\_perimeter()}\spxextra{in module trianglelib.utils}, \hyperpage{7}
+  \item \spxentry{c}\spxextra{trianglelib.shape.Triangle attribute}, \hyperpage{7}
+  \item \spxentry{compute\_area()}\spxextra{in module trianglelib.utils}, \hyperpage{9}
+  \item \spxentry{compute\_perimeter()}\spxextra{in module trianglelib.utils}, \hyperpage{9}
 
   \indexspace
   \bigletter E
   \item \spxentry{equality}
-    \subitem \spxentry{triangle}, \hyperpage{5}
+    \subitem \spxentry{triangle}, \hyperpage{7}
   \item \spxentry{Euclid}, \hyperpage{3}
 
   \indexspace
   \bigletter I
-  \item \spxentry{is\_equilateral()}\spxextra{in module trianglelib.utils}, \hyperpage{7}
-  \item \spxentry{is\_equilateral()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{6}
-  \item \spxentry{is\_equivalent()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{6}
-  \item \spxentry{is\_isosceles()}\spxextra{in module trianglelib.utils}, \hyperpage{7}
-  \item \spxentry{is\_isosceles()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{6}
-  \item \spxentry{is\_similar()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{6}
-  \item \spxentry{is\_triangle()}\spxextra{in module trianglelib.utils}, \hyperpage{8}
+  \item \spxentry{is\_equilateral()}\spxextra{in module trianglelib.utils}, \hyperpage{9}
+  \item \spxentry{is\_equilateral()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{8}
+  \item \spxentry{is\_equivalent()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{8}
+  \item \spxentry{is\_isosceles()}\spxextra{in module trianglelib.utils}, \hyperpage{9}
+  \item \spxentry{is\_isosceles()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{8}
+  \item \spxentry{is\_similar()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{8}
+  \item \spxentry{is\_triangle()}\spxextra{in module trianglelib.utils}, \hyperpage{10}
 
   \indexspace
   \bigletter M
   \item \spxentry{module}
-    \subitem \spxentry{trianglelib}, \hyperpage{5}
-    \subitem \spxentry{trianglelib.shape}, \hyperpage{5}
-    \subitem \spxentry{trianglelib.utils}, \hyperpage{7}
+    \subitem \spxentry{trianglelib}, \hyperpage{7}
+    \subitem \spxentry{trianglelib.shape}, \hyperpage{7}
+    \subitem \spxentry{trianglelib.utils}, \hyperpage{9}
 
   \indexspace
   \bigletter P
-  \item \spxentry{perimeter()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{6}
+  \item \spxentry{perimeter()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{8}
 
   \indexspace
   \bigletter S
-  \item \spxentry{scale()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{6}
+  \item \spxentry{scale()}\spxextra{trianglelib.shape.Triangle method}, \hyperpage{8}
 
   \indexspace
   \bigletter T
   \item \spxentry{triangle}
-    \subitem \spxentry{equality}, \hyperpage{5}
-  \item \spxentry{Triangle}\spxextra{class in trianglelib.shape}, \hyperpage{5}
+    \subitem \spxentry{equality}, \hyperpage{7}
+  \item \spxentry{Triangle}\spxextra{class in trianglelib.shape}, \hyperpage{7}
   \item \spxentry{trianglelib}
-    \subitem \spxentry{module}, \hyperpage{5}
-  \item \spxentry{trianglelib.shape}
-    \subitem \spxentry{module}, \hyperpage{5}
-  \item \spxentry{trianglelib.utils}
     \subitem \spxentry{module}, \hyperpage{7}
+  \item \spxentry{trianglelib.shape}
+    \subitem \spxentry{module}, \hyperpage{7}
+  \item \spxentry{trianglelib.utils}
+    \subitem \spxentry{module}, \hyperpage{9}
 
 \end{sphinxtheindex}

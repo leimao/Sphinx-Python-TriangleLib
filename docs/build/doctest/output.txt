@@ -1,12 +1,12 @@
-Results of doctest builder run on 2020-08-01 18:17:56
+Results of doctest builder run on 2020-08-01 21:59:17
 =====================================================
 
-Document: tutorial
-------------------
+Document: api
+-------------
 1 items passed all tests:
-   3 tests in default
-3 tests in 1 items.
-3 passed and 0 failed.
+   4 tests in default
+4 tests in 1 items.
+4 passed and 0 failed.
 Test passed.
 
 Document: guide
@@ -17,12 +17,12 @@ Document: guide
 10 passed and 0 failed.
 Test passed.
 
-Document: api
--------------
+Document: tutorial
+------------------
 1 items passed all tests:
-   4 tests in default
-4 tests in 1 items.
-4 passed and 0 failed.
+   3 tests in default
+3 tests in 1 items.
+3 passed and 0 failed.
 Test passed.
 
 Doctest summary

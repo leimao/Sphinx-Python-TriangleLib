@@ -1,26 +1,26 @@
 \indexentry{Euclid@\spxentry{Euclid}|hyperpage}{3}
-\indexentry{module@\spxentry{module}!trianglelib@\spxentry{trianglelib}|hyperpage}{5}
-\indexentry{trianglelib@\spxentry{trianglelib}!module@\spxentry{module}|hyperpage}{5}
-\indexentry{module@\spxentry{module}!trianglelib.shape@\spxentry{trianglelib.shape}|hyperpage}{5}
-\indexentry{trianglelib.shape@\spxentry{trianglelib.shape}!module@\spxentry{module}|hyperpage}{5}
-\indexentry{Triangle (class in trianglelib.shape)@\spxentry{Triangle}\spxextra{class in trianglelib.shape}|hyperpage}{5}
-\indexentry{a (trianglelib.shape.Triangle attribute)@\spxentry{a}\spxextra{trianglelib.shape.Triangle attribute}|hyperpage}{5}
-\indexentry{b (trianglelib.shape.Triangle attribute)@\spxentry{b}\spxextra{trianglelib.shape.Triangle attribute}|hyperpage}{5}
-\indexentry{c (trianglelib.shape.Triangle attribute)@\spxentry{c}\spxextra{trianglelib.shape.Triangle attribute}|hyperpage}{5}
-\indexentry{equality@\spxentry{equality}!triangle@\spxentry{triangle}|hyperpage}{5}
-\indexentry{triangle@\spxentry{triangle}!equality@\spxentry{equality}|hyperpage}{5}
-\indexentry{\_\_init\_\_() (trianglelib.shape.Triangle method)@\spxentry{\_\_init\_\_()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{5}
-\indexentry{is\_equivalent() (trianglelib.shape.Triangle method)@\spxentry{is\_equivalent()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{6}
-\indexentry{is\_similar() (trianglelib.shape.Triangle method)@\spxentry{is\_similar()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{6}
-\indexentry{is\_equilateral() (trianglelib.shape.Triangle method)@\spxentry{is\_equilateral()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{6}
-\indexentry{is\_isosceles() (trianglelib.shape.Triangle method)@\spxentry{is\_isosceles()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{6}
-\indexentry{perimeter() (trianglelib.shape.Triangle method)@\spxentry{perimeter()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{6}
-\indexentry{area() (trianglelib.shape.Triangle method)@\spxentry{area()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{6}
-\indexentry{scale() (trianglelib.shape.Triangle method)@\spxentry{scale()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{6}
-\indexentry{module@\spxentry{module}!trianglelib.utils@\spxentry{trianglelib.utils}|hyperpage}{7}
-\indexentry{trianglelib.utils@\spxentry{trianglelib.utils}!module@\spxentry{module}|hyperpage}{7}
-\indexentry{compute\_area() (in module trianglelib.utils)@\spxentry{compute\_area()}\spxextra{in module trianglelib.utils}|hyperpage}{7}
-\indexentry{compute\_perimeter() (in module trianglelib.utils)@\spxentry{compute\_perimeter()}\spxextra{in module trianglelib.utils}|hyperpage}{7}
-\indexentry{is\_equilateral() (in module trianglelib.utils)@\spxentry{is\_equilateral()}\spxextra{in module trianglelib.utils}|hyperpage}{7}
-\indexentry{is\_isosceles() (in module trianglelib.utils)@\spxentry{is\_isosceles()}\spxextra{in module trianglelib.utils}|hyperpage}{7}
-\indexentry{is\_triangle() (in module trianglelib.utils)@\spxentry{is\_triangle()}\spxextra{in module trianglelib.utils}|hyperpage}{8}
+\indexentry{module@\spxentry{module}!trianglelib@\spxentry{trianglelib}|hyperpage}{7}
+\indexentry{trianglelib@\spxentry{trianglelib}!module@\spxentry{module}|hyperpage}{7}
+\indexentry{module@\spxentry{module}!trianglelib.shape@\spxentry{trianglelib.shape}|hyperpage}{7}
+\indexentry{trianglelib.shape@\spxentry{trianglelib.shape}!module@\spxentry{module}|hyperpage}{7}
+\indexentry{Triangle (class in trianglelib.shape)@\spxentry{Triangle}\spxextra{class in trianglelib.shape}|hyperpage}{7}
+\indexentry{a (trianglelib.shape.Triangle attribute)@\spxentry{a}\spxextra{trianglelib.shape.Triangle attribute}|hyperpage}{7}
+\indexentry{b (trianglelib.shape.Triangle attribute)@\spxentry{b}\spxextra{trianglelib.shape.Triangle attribute}|hyperpage}{7}
+\indexentry{c (trianglelib.shape.Triangle attribute)@\spxentry{c}\spxextra{trianglelib.shape.Triangle attribute}|hyperpage}{7}
+\indexentry{equality@\spxentry{equality}!triangle@\spxentry{triangle}|hyperpage}{7}
+\indexentry{triangle@\spxentry{triangle}!equality@\spxentry{equality}|hyperpage}{7}
+\indexentry{\_\_init\_\_() (trianglelib.shape.Triangle method)@\spxentry{\_\_init\_\_()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{7}
+\indexentry{is\_equivalent() (trianglelib.shape.Triangle method)@\spxentry{is\_equivalent()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{8}
+\indexentry{is\_similar() (trianglelib.shape.Triangle method)@\spxentry{is\_similar()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{8}
+\indexentry{is\_equilateral() (trianglelib.shape.Triangle method)@\spxentry{is\_equilateral()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{8}
+\indexentry{is\_isosceles() (trianglelib.shape.Triangle method)@\spxentry{is\_isosceles()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{8}
+\indexentry{perimeter() (trianglelib.shape.Triangle method)@\spxentry{perimeter()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{8}
+\indexentry{area() (trianglelib.shape.Triangle method)@\spxentry{area()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{8}
+\indexentry{scale() (trianglelib.shape.Triangle method)@\spxentry{scale()}\spxextra{trianglelib.shape.Triangle method}|hyperpage}{8}
+\indexentry{module@\spxentry{module}!trianglelib.utils@\spxentry{trianglelib.utils}|hyperpage}{9}
+\indexentry{trianglelib.utils@\spxentry{trianglelib.utils}!module@\spxentry{module}|hyperpage}{9}
+\indexentry{compute\_area() (in module trianglelib.utils)@\spxentry{compute\_area()}\spxextra{in module trianglelib.utils}|hyperpage}{9}
+\indexentry{compute\_perimeter() (in module trianglelib.utils)@\spxentry{compute\_perimeter()}\spxextra{in module trianglelib.utils}|hyperpage}{9}
+\indexentry{is\_equilateral() (in module trianglelib.utils)@\spxentry{is\_equilateral()}\spxextra{in module trianglelib.utils}|hyperpage}{9}
+\indexentry{is\_isosceles() (in module trianglelib.utils)@\spxentry{is\_isosceles()}\spxextra{in module trianglelib.utils}|hyperpage}{9}
+\indexentry{is\_triangle() (in module trianglelib.utils)@\spxentry{is\_triangle()}\spxextra{in module trianglelib.utils}|hyperpage}{10}

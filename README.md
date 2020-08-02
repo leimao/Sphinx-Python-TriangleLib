@@ -30,7 +30,7 @@ Please check the [`README`](docs/README.md) in [`docs`](docs/) for details.
 
 ## Publish Documentations
 
-Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and follow the instructions to publish the documentations. The latest version of the documentation of this repo could be found on [TriangleLib's Documentation](https://sphinx-python-trianglelib.readthedocs.io/).
+Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and follow the instructions to publish the documentations. The latest version of the documentation of this repo could be found on [TriangleLib's Documentation](https://sphinx-python-trianglelib.readthedocs.io/). Use [GitHub tags](https://github.com/leimao/Sphinx-Python-TriangleLib/tags) for version control on Read the Docs.
 
 ## References
 

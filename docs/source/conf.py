@@ -22,7 +22,7 @@ copyright = '2020, Brandon Rhodes, Lei Mao'
 author = 'Brandon Rhodes, Lei Mao'
 
 # The full version, including alpha/beta/rc tags
-release = '1.1'
+release = '1.2'
 
 
 # -- General configuration ---------------------------------------------------

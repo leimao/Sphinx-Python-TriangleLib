@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="trianglelib", # Replace with your own username
-    version="1.1",
+    version="1.2",
     author="Brandon Rhodes, Lei Mao",
     author_email="brandon@rhodesmill.org, dukeleimao@gmail.com",
     description="A small triangle library for Sphinx tutorial.",

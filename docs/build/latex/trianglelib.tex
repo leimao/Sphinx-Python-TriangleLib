@@ -75,7 +75,7 @@
 
 \title{trianglelib}
 \date{Aug 01, 2020}
-\release{1.1}
+\release{1.2}
 \author{Brandon Rhodes, Lei Mao}
 \newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{Release}
@@ -213,6 +213,62 @@ Read {\hyperref[\detokenize{guide::doc}]{\sphinxcrossref{\DUrole{doc}{Example: g
 This module only handles three\sphinxhyphen{}sided polygons;
 five\sphinxhyphen{}sided figures are right out.
 \end{sphinxadmonition}
+
+
+\chapter{The trianglelib Examples}
+\label{\detokenize{examples:the-trianglelib-examples}}\label{\detokenize{examples::doc}}
+
+\section{Example 1}
+\label{\detokenize{examples:example-1}}
+This is example 1 \sphinxstylestrong{included} from \sphinxhref{https://github.com/leimao/Sphinx-Python-TriangleLib/blob/master/examples/00-create\_triangle/create\_triangle.py}{create\_triangle.py}.
+
+\fvset{hllines={, 5,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{trianglelib}\PYG{n+nn}{.}\PYG{n+nn}{shape} \PYG{k+kn}{import} \PYG{n}{Triangle}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}
+
+    \PYG{n}{t} \PYG{o}{=} \PYG{n}{Triangle}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Equilateral?}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{t}\PYG{o}{.}\PYG{n}{is\PYGZus{}equilateral}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Isosceles?}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{t}\PYG{o}{.}\PYG{n}{is\PYGZus{}isosceles}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}
+\end{sphinxVerbatim}
+\sphinxresetverbatimhllines
+
+
+\section{Example 2}
+\label{\detokenize{examples:example-2}}\label{\detokenize{examples:reference-2}}
+This is example 2 \sphinxstylestrong{included} from \sphinxhref{https://github.com/leimao/Sphinx-Python-TriangleLib/blob/master/examples/00-create\_triangle/create\_triangle.py}{create\_triangle.py}.
+
+\fvset{hllines={, 5, 7,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{trianglelib}\PYG{n+nn}{.}\PYG{n+nn}{shape} \PYG{k+kn}{import} \PYG{n}{Triangle}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}
+
+    \PYG{n}{t} \PYG{o}{=} \PYG{n}{Triangle}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Equilateral?}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{t}\PYG{o}{.}\PYG{n}{is\PYGZus{}equilateral}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Isosceles?}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{t}\PYG{o}{.}\PYG{n}{is\PYGZus{}isosceles}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}
+\end{sphinxVerbatim}
+\sphinxresetverbatimhllines
+
+
+\section{Example 3}
+\label{\detokenize{examples:example-3}}
+This is example 3 \sphinxstylestrong{copied} from \sphinxhref{https://github.com/leimao/Sphinx-Python-TriangleLib/blob/master/examples/00-create\_triangle/create\_triangle.py}{create\_triangle.py}.
+
+\fvset{hllines={, 5, 7,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{trianglelib}\PYG{n+nn}{.}\PYG{n+nn}{shape} \PYG{k+kn}{import} \PYG{n}{Triangle}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}
+
+    \PYG{n}{t} \PYG{o}{=} \PYG{n}{Triangle}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Equilateral?}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{t}\PYG{o}{.}\PYG{n}{is\PYGZus{}equilateral}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Isosceles?}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{t}\PYG{o}{.}\PYG{n}{is\PYGZus{}isosceles}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}
+\end{sphinxVerbatim}
+\sphinxresetverbatimhllines
+
+Comparing with {\hyperref[\detokenize{examples:reference-2}]{\sphinxcrossref{\DUrole{std,std-ref}{Example 2}}}}, we confirmed that they are the same.
 
 
 \chapter{The trianglelib API Reference}
