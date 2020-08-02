@@ -27,3 +27,8 @@ $ pip install .
 ## Build Documentations
 
 Please check the [`README`](docs/README.md) in [`docs`](docs/) for details.
+
+## References
+
+* [Brandon Rhodes's Sphinx Tutorial](https://github.com/brandon-rhodes/sphinx-tutorial)
+* [Brandon Rhodes's Sphinx Tutorial Session at PyCon 2013](https://www.youtube.com/watch?v=QNHM7q2hLh8)
