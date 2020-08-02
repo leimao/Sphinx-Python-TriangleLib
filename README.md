@@ -6,7 +6,7 @@ This repository is an updated version for [Brandon Rhodes](https://github.com/br
 
 It is strongly recommended to watch Brandon Rhodes's [Sphinx tutorial session](https://www.youtube.com/watch?v=QNHM7q2hLh8) at PyCon 2013, since I have not found any other tutorial videos or blogs are as good as his even though it is year 2020 now. Most of the content he presented is still applicable to Python 3 and the latest Sphinx, and the reStructuredText was covered sufficiently for writing documentations for Sphinx.
 
-This repository would be useful as a reference for programming with Sphinx, provided that we have taken Brandon Rhodes's Sphinx tutorial session.
+This repository would be useful as a reference for programming with Python 3 and Sphinx, provided that we have taken Brandon Rhodes's Sphinx tutorial session.
 
 ## Installation
 
@@ -27,6 +27,10 @@ $ pip install .
 ## Build Documentations
 
 Please check the [`README`](docs/README.md) in [`docs`](docs/) for details.
+
+## Publish Documentations
+
+
 
 ## References
 

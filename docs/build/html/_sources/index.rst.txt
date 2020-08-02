@@ -12,6 +12,7 @@ Welcome to trianglelib's documentation!
 
    guide
    tutorial
+   examples
    api
 
 

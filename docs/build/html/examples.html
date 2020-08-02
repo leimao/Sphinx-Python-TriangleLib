@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The trianglelib Examples &#8212; trianglelib 1.1 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The trianglelib API Reference" href="api.html" />
+    <link rel="prev" title="Example: tutorial.rst — The trianglelib tutorial" href="tutorial.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>trianglelib 1.1 documentation</span></a></h1>
+        <h2 class="heading"><span>The trianglelib Examples</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="tutorial.html">Example: tutorial.rst — The trianglelib tutorial</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="api.html">The trianglelib API Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="the-trianglelib-examples">
+<h1>The trianglelib Examples<a class="headerlink" href="#the-trianglelib-examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>This is example 1 <strong>included</strong> from <a class="reference external" href="https://github.com/leimao/Sphinx-Python-TriangleLib/blob/master/examples/00-create_triangle/create_triangle.py">create_triangle.py</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">trianglelib.shape</span> <span class="kn">import</span> <span class="n">Triangle</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+<span class="hll">    <span class="n">t</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Equilateral?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_equilateral</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Isosceles?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_isosceles</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<span id="reference-2"></span><h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>This is example 2 <strong>included</strong> from <a class="reference external" href="https://github.com/leimao/Sphinx-Python-TriangleLib/blob/master/examples/00-create_triangle/create_triangle.py">create_triangle.py</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">trianglelib.shape</span> <span class="kn">import</span> <span class="n">Triangle</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+<span class="hll">    <span class="n">t</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Equilateral?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_equilateral</span><span class="p">())</span>
+<span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Isosceles?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_isosceles</span><span class="p">())</span>
+</span></pre></div>
+</div>
+</div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<p>This is example 3 <strong>copied</strong> from <a class="reference external" href="https://github.com/leimao/Sphinx-Python-TriangleLib/blob/master/examples/00-create_triangle/create_triangle.py">create_triangle.py</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">trianglelib.shape</span> <span class="kn">import</span> <span class="n">Triangle</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+<span class="hll">    <span class="n">t</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Equilateral?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_equilateral</span><span class="p">())</span>
+<span class="hll">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Isosceles?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_isosceles</span><span class="p">())</span>
+</span></pre></div>
+</div>
+<p>Comparing with <a class="reference internal" href="#reference-2"><span class="std std-ref">Example 2</span></a>, we confirmed that they are the same.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="tutorial.html">Example: tutorial.rst — The trianglelib tutorial</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="api.html">The trianglelib API Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Brandon Rhodes, Lei Mao.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
+    </div>
+  </body>
+</html>
