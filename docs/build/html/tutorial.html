@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example: tutorial.rst — The trianglelib tutorial &#8212; trianglelib 1.1 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The trianglelib API Reference" href="api.html" />
+    <link rel="prev" title="Example: guide.rst — The trianglelib guide" href="guide.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>trianglelib 1.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Example: tutorial.rst — The trianglelib tutorial</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="guide.html">Example: guide.rst — The trianglelib guide</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="api.html">The trianglelib API Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="example-tutorial-rst-the-trianglelib-tutorial">
+<h1>Example: tutorial.rst — The trianglelib tutorial<a class="headerlink" href="#example-tutorial-rst-the-trianglelib-tutorial" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p id="index-0"><em>“There is no royal road to geometry.”</em> — Euclid</p>
+</div></blockquote>
+<p>This module makes triangle processing fun!
+The beginner will enjoy how the <a class="reference internal" href="api.html#module-trianglelib.utils" title="trianglelib.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">utils</span></code></a> module
+lets you get started quickly.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">trianglelib</span> <span class="kn">import</span> <span class="n">utils</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">utils</span><span class="o">.</span><span class="n">is_isosceles</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>But fancier programmers can use the <a class="reference internal" href="api.html#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a>
+class to create an actual triangle <em>object</em>
+upon which they can then perform lots of operations.
+For example, consider this Python program:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">trianglelib.shape</span> <span class="kn">import</span> <span class="n">Triangle</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Equilateral?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_equilateral</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Isosceles?&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">is_isosceles</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Since methods like <a class="reference internal" href="api.html#trianglelib.shape.Triangle.is_equilateral" title="trianglelib.shape.Triangle.is_equilateral"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_equilateral()</span></code></a>
+return Boolean values, this program will produce the following output:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Equilateral? True
+Isosceles? True
+</pre></div>
+</div>
+<p>Read <a class="reference internal" href="guide.html"><span class="doc">Example: guide.rst — The trianglelib guide</span></a> to learn more!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This module only handles three-sided polygons;
+five-sided figures are right out.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="guide.html">Example: guide.rst — The trianglelib guide</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="api.html">The trianglelib API Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Brandon Rhodes, Lei Mao.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
+    </div>
+  </body>
+</html>

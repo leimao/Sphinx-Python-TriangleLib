@@ -1,1 +1,4 @@
-Sphinx-Python-TriangleLib
+
+```
+$ pip install -r requirements.txt
+```

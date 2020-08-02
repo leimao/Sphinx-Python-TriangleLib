@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The trianglelib API Reference &#8212; trianglelib 1.1 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Example: tutorial.rst — The trianglelib tutorial" href="tutorial.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>trianglelib 1.1 documentation</span></a></h1>
+        <h2 class="heading"><span>The trianglelib API Reference</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="tutorial.html">Example: tutorial.rst — The trianglelib tutorial</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="module-trianglelib">
+<span id="the-trianglelib-api-reference"></span><h1>The trianglelib API Reference<a class="headerlink" href="#module-trianglelib" title="Permalink to this headline">¶</a></h1>
+<p>Routines for working with triangles.</p>
+<p>The two modules inside of this package are packed with useful features
+for the programmer who needs to support triangles:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">shape</span></code></dt><dd><p>This module provides a full-fledged <cite>Triangle</cite> object that can be
+instantiated and then asked to provide all sorts of information
+about its properties.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">utils</span></code></dt><dd><p>For the programmer in a hurry, this module offers quick functions
+that take as arguments the three side lengths of a triangle, and
+perform a quick computation without the programmer having to make
+the extra step of creating an object.</p>
+</dd>
+</dl>
+<div class="section" id="module-trianglelib.shape">
+<span id="the-shape-module"></span><h2>The “shape” module<a class="headerlink" href="#module-trianglelib.shape" title="Permalink to this headline">¶</a></h2>
+<p>Use the triangle class to represent triangles.</p>
+<dl class="py class">
+<dt id="trianglelib.shape.Triangle">
+<em class="property">class </em><code class="sig-prename descclassname">trianglelib.shape.</code><code class="sig-name descname">Triangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>A <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object is a three-sided polygon.</p>
+<p>You instantiate a <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> by providing exactly three lengths <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p>
+<p>They can either be intergers or floating-point numbers, and should be listed clockwise around the triangle.</p>
+<p>If the three lengths <em>cannot</em> make a valid triangle, then <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> will be raised instead.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">trianglelib.shape</span> <span class="kn">import</span> <span class="n">Triangle</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">is_equilateral</span><span class="p">())</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">area</span><span class="p">())</span>
+<span class="go">6.0</span>
+</pre></div>
+</div>
+<p>Triangles support the following attributes, operators, and methods.</p>
+<dl class="py attribute">
+<dt id="trianglelib.shape.Triangle.a">
+<code class="sig-name descname">a</code><a class="headerlink" href="#trianglelib.shape.Triangle.a" title="Permalink to this definition">¶</a></dt>
+<dt id="trianglelib.shape.Triangle.b">
+<code class="sig-name descname">b</code><a class="headerlink" href="#trianglelib.shape.Triangle.b" title="Permalink to this definition">¶</a></dt>
+<dt id="trianglelib.shape.Triangle.c">
+<code class="sig-name descname">c</code><a class="headerlink" href="#trianglelib.shape.Triangle.c" title="Permalink to this definition">¶</a></dt>
+<dd><p>The three side lengths provided during instantiation.</p>
+</dd></dl>
+
+<span class="target" id="index-0"></span><dl class="py method">
+<dt>
+<code class="sig-name descname">triangle1 == triangle2</code></dt>
+<dd><p>Returns true if the two triangles have sides of the same lengths,
+in the same order.
+Note that it is okay if the two triangles
+happen to start their list of sides at a different corner;
+<code class="docutils literal notranslate"><span class="pre">3,4,5</span></code> is the same triangle as <code class="docutils literal notranslate"><span class="pre">4,5,3</span></code>
+but neither of these are the same triangle
+as their mirror image <code class="docutils literal notranslate"><span class="pre">5,4,3</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object with sides of lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite>.</p>
+<p>Raises <cite>ValueError</cite> if the three length values provided cannot
+actually form a triangle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length one</p></li>
+<li><p><strong>b</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length two</p></li>
+<li><p><strong>c</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length three</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – side lengths must all be positive</p></li>
+<li><p><strong>ValueError</strong> – one side is too long to make a triangle</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.is_equivalent">
+<code class="sig-name descname">is_equivalent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">triangle</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.is_equivalent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.is_equivalent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this triangle equals another triangle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>triangle</strong> (<a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a>) – another <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>whether the two <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> objects are equivalent</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.is_similar">
+<code class="sig-name descname">is_similar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">triangle</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.is_similar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.is_similar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object is similar to another triangle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>triangle</strong> (<a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a>) – another <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>whether the two <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> objects are similar</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.is_equilateral">
+<code class="sig-name descname">is_equilateral</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.is_equilateral"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.is_equilateral" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object is equilateral.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether the <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object is equilateral</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.is_isosceles">
+<code class="sig-name descname">is_isosceles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.is_isosceles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.is_isosceles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object is isosceles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether the <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object is isosceles</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.perimeter">
+<code class="sig-name descname">perimeter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.perimeter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.perimeter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the perimeter of this <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the perimeter of the <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.area">
+<code class="sig-name descname">area</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.area"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the area of this <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the area of the <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="trianglelib.shape.Triangle.scale">
+<code class="sig-name descname">scale</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factor</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.scale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object, <cite>factor</cite> times the size of this one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>factor</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – scaling factor</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a scaled new <a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a> object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#trianglelib.shape.Triangle" title="trianglelib.shape.Triangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triangle</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-trianglelib.utils">
+<span id="the-utils-module"></span><h2>The “utils” module<a class="headerlink" href="#module-trianglelib.utils" title="Permalink to this headline">¶</a></h2>
+<p>Routines to test triangle properties without explicit instantiation.</p>
+<dl class="py function">
+<dt id="trianglelib.utils.compute_area">
+<code class="sig-prename descclassname">trianglelib.utils.</code><code class="sig-name descname">compute_area</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#compute_area"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.compute_area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the area of the triangle with side lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite>.</p>
+<p>If the three lengths provided cannot be the sides of a triangle,
+then the area 0 is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length one</p></li>
+<li><p><strong>b</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length two</p></li>
+<li><p><strong>c</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length three</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>area. If the three lengths provided cannot be the sides of a triangle, then the perimeter 0 is returned.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="trianglelib.utils.compute_perimeter">
+<code class="sig-prename descclassname">trianglelib.utils.</code><code class="sig-name descname">compute_perimeter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#compute_perimeter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.compute_perimeter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the perimeter of the triangle with side lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite>.</p>
+<p>If the three lengths provided cannot be the sides of a triangle,
+then the perimeter 0 is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length one</p></li>
+<li><p><strong>b</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length two</p></li>
+<li><p><strong>c</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length three</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>perimeter. If the three lengths provided cannot be the sides of a triangle, then the perimeter 0 is returned.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="trianglelib.utils.is_equilateral">
+<code class="sig-prename descclassname">trianglelib.utils.</code><code class="sig-name descname">is_equilateral</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#is_equilateral"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.is_equilateral" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite> are an equilateral triangle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length one</p></li>
+<li><p><strong>b</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length two</p></li>
+<li><p><strong>c</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length three</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>whether lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite> are an equilateral triangle</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="trianglelib.utils.is_isosceles">
+<code class="sig-prename descclassname">trianglelib.utils.</code><code class="sig-name descname">is_isosceles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#is_isosceles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.is_isosceles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite> are an isosceles triangle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length one</p></li>
+<li><p><strong>b</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length two</p></li>
+<li><p><strong>c</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length three</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>whether lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite> are an isosceles triangle</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="trianglelib.utils.is_triangle">
+<code class="sig-prename descclassname">trianglelib.utils.</code><code class="sig-name descname">is_triangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">c</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#is_triangle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.is_triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether lengths <cite>a</cite>, <cite>b</cite>, <cite>c</cite> can be the sides of a triangle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length one</p></li>
+<li><p><strong>b</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length two</p></li>
+<li><p><strong>c</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – side length three</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>whether lengths <cite>a</cite>, <cite>b</cite>, <cite>c</cite> can be the sides of a triangle</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="tutorial.html">Example: tutorial.rst — The trianglelib tutorial</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Brandon Rhodes, Lei Mao.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
+    </div>
+  </body>
+</html>
