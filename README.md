@@ -8,7 +8,7 @@ It is strongly recommended to watch Brandon Rhodes's [Sphinx tutorial session](h
 
 This repository would be useful as a reference for documentation with Python 3 and Sphinx, provided that we have taken Brandon Rhodes's Sphinx tutorial session. There is also a short [blog post](https://leimao.github.io/blog/Python-Documentation-Using-Sphinx/) on this on my website.
 
-## Project Layout
+## Files
 
 ```
 .
