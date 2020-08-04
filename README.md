@@ -6,7 +6,7 @@ This repository is an updated version for [Brandon Rhodes](https://github.com/br
 
 It is strongly recommended to watch Brandon Rhodes's [Sphinx tutorial session](https://www.youtube.com/watch?v=QNHM7q2hLh8) at PyCon 2013, since I have not found any other tutorial videos or blogs are as good as his even though it is year 2020 now. Most of the content he presented is still applicable to Python 3 and the latest Sphinx, and the [reStructuredText](https://docutils.sourceforge.io/rst.html) was covered sufficiently in depth for writing documentations for Sphinx.
 
-This repository would be useful as a reference for documentation with Python 3 and Sphinx, provided that we have taken Brandon Rhodes's Sphinx tutorial session.
+This repository would be useful as a reference for documentation with Python 3 and Sphinx, provided that we have taken Brandon Rhodes's Sphinx tutorial session. There is also a short [blog post](https://leimao.github.io/blog/Python-Documentation-Using-Sphinx/) on this on my website.
 
 ## Installation
 
@@ -36,3 +36,4 @@ Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and fo
 
 * [Brandon Rhodes's Sphinx Tutorial](https://github.com/brandon-rhodes/sphinx-tutorial)
 * [Brandon Rhodes's Sphinx Tutorial Session at PyCon 2013](https://www.youtube.com/watch?v=QNHM7q2hLh8)
+* [Python Documentation Using Sphinx](https://leimao.github.io/blog/Python-Documentation-Using-Sphinx/)
