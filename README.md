@@ -8,6 +8,39 @@ It is strongly recommended to watch Brandon Rhodes's [Sphinx tutorial session](h
 
 This repository would be useful as a reference for documentation with Python 3 and Sphinx, provided that we have taken Brandon Rhodes's Sphinx tutorial session. There is also a short [blog post](https://leimao.github.io/blog/Python-Documentation-Using-Sphinx/) on this on my website.
 
+## Project Layout
+
+```
+.
+├── docs
+│   ├── make.bat
+│   ├── Makefile
+│   ├── README.md
+│   └── source
+│       ├── api.rst
+│       ├── conf.py
+│       ├── examples.rst
+│       ├── guide.rst
+│       ├── index.rst
+│       ├── _static
+│       ├── _templates
+│       └── tutorial.rst
+├── examples
+│   ├── 00-create_triangle
+│   │   ├── create_triangle.py
+│   │   └── README.md
+│   └── README.md
+├── LICENSE.md
+├── README.md
+├── requirements.txt
+├── setup.py
+└── trianglelib
+    ├── __init__.py
+    ├── shape.py
+    ├── tests.py
+    └── utils.py
+```
+
 ## Installation
 
 The `trianglelib` used for the tutorial has no dependency. But for completeness, we added `setuptools` and `sphinx` to our `requirements.txt`. 
